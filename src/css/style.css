@@ -1,0 +1,348 @@
+:root {
+    --max-width-size: 1920px;
+    --header-background-color: #fff;
+    --font-color-header: #ff001b;
+    --background-color: #ff001b;
+    --body-background-color: #ff9faa;
+    --footer-background-color: #ff001b;
+    --footer-font-color: #fff;
+    --font-h2-restaurant: #fff;
+    --font-stroke:#ff001b;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    display: grid;
+    grid-template-areas: "header header header header"
+        "home home home home"
+        "cardapio cardapio cardapio cardapio"
+        "restaurantes restaurantes restaurantes restaurantes"
+        "form form form form"
+        "footer footer footer footer";
+    grid-template-columns: repeat(4, 1fr);
+    background-color: var(--body-background-color);
+    max-width: 1440px;
+    margin: 0 auto;
+
+}
+
+/*header */
+.header {
+    grid-area: header;
+    background-color: var(--header-background-color);
+}
+
+.header .header-container {
+    display: flex;
+    padding: 20px 40px;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 75px;
+}
+
+.header h1 {
+    font-size: 30px;
+    font-weight: 700;
+    transition: 0.5s;
+}
+
+.header a {
+    color: var(--font-color-header);
+}
+
+.header nav ul {
+    display: flex;
+}
+
+.header nav ul li a {
+    font-weight: 500;
+    padding: 10px 30px;
+}
+
+.header nav ul li a:hover {
+    color: #fff;
+    background-color: #FF0014;
+}
+
+/*responsivo*/
+.menu {
+    display: none;
+    width: 60px;
+    height: 60px;
+    align-self: flex-end;
+}
+
+.header nav label {
+    display: flex;
+    flex-direction: column;
+}
+
+.header .retratil {
+    background-color: #000;
+    position: relative;
+    display: block;
+    width: 30px;
+    height: 2px;
+    top: 29px;
+    left: 15px;
+    transition: 0.7s ease-in-out;
+}
+
+.header .retratil:before,
+.header .retratil:after {
+    background-color: #000;
+    content: "";
+    display: block;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    transition: 0.2 ease-in-out;
+}
+
+.header .retratil:before {
+    top: -10px;
+}
+
+.header .retratil:after {
+    bottom: -10px;
+}
+
+.header input {
+    display: none;
+}
+
+.header input:checked~label .retratil {
+    transform: rotate(45deg);
+
+}
+
+.header input:checked~label .retratil:before {
+    transform: rotate(90deg);
+    top: 0;
+}
+
+.header input:checked~label .retratil:after {
+    transform: rotate(90deg);
+    bottom: 0;
+}
+
+/*home*/
+
+.home {
+    grid-area: home;
+    background-color: var(--background-color);
+
+}
+
+.home .container {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 100vw;
+    height: 89vh;
+    margin: 0 auto;
+    justify-content: space-around;
+}
+
+.container-img,
+.container-video,
+.container-h2 {
+    width: calc(33.33% -10px);
+    margin-bottom: 10px;
+}
+
+.container-img {
+    width: 40%;
+    padding: 200px 0;
+    margin: 0 auto;
+}
+
+.container-img img {
+    width: 100%;
+    padding-left: 100px;
+}
+
+.container-video {
+    height: 70vh;
+    padding: 200px 50px;
+}
+
+.container-video iframe {
+    border: solid #fff 5px;
+    transition: 0.4s;
+}
+
+iframe:hover {
+    border: solid #ff9faa 3px;
+}
+
+.container-h2 {
+    height: 19vh;
+    padding: 10% 0;
+    text-align: center;
+    justify-content: center;
+    color: #fff;
+    font-style: italic;
+}
+
+/*cardapio*/
+.cardapio {
+    grid-area: cardapio;
+    background-color: var(--header-background-color);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    margin: 0px;
+    padding: 10px;
+}
+
+.cardapio .cardapio-h2 {
+    width: 100%;
+    margin: 0 0 0 20px;
+    padding: 10px;
+}
+
+.cardapio .card {
+    margin-bottom: 12px;
+    border: solid 1px red;
+}
+
+.card-body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.card-text {
+    text-align: justify;
+}
+
+.card .card-price {
+    font-weight: 700;
+}
+
+/*restaurantes*/
+.restaurantes {
+    grid-area: restaurantes;
+    background-color: var(--body-background-color);
+    max-width: 1440px;
+    padding: 30px;
+    text-align: justify;
+}
+
+.restaurantes h2 {
+    padding-bottom: 20px;
+    color: var(--font-h2-restaurant);
+}
+
+.restaurantes h2:hover {
+    padding-bottom: 20px;
+    color: var(--font-h2-restaurant);
+    -webkit-text-stroke: 0.5px var(--font-stroke);
+}
+
+.list-unstyled {
+    background-color: var(--body-background-color);
+}
+
+.mr-3 {
+    height: 90px;
+    border-radius: 10px;
+}
+
+.list-unstyled li {
+    border: solid var(--header-background-color) 2px;
+    border-radius: 10px;
+    padding: 4px;
+    background-color: var(--header-background-color);
+}
+
+.list-unstyled li:hover {
+    border: solid var(--font-color-header) 2px;
+}
+
+/*form*/
+.form {
+    grid-area: form;
+}
+
+.form {
+    padding: 20px;
+    background-color: var(--header-background-color);
+    align-items: center;
+}
+
+.form h2 {
+    padding-bottom: 20px;
+}
+
+.form-group .enviar-submit {
+    width: 100px;
+    border-radius: 100px;
+    background-color: #FF0014;
+    color: white;
+    border: solid 1px ;
+}
+
+/*footer*/
+.footer {
+    grid-area: footer;
+    display: flex;
+    background-color: var(--footer-background-color);
+    padding: 20px;
+    flex-direction: column;
+    text-align: center;
+    padding: 100px;
+}
+
+.footer h4 {
+    font-weight: 700;
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+.footer nav {
+    margin: 50px 0;
+}
+
+.footer nav ul {
+    display: flex;
+    justify-content: center;
+    max-width: 320px;
+    margin: 0 auto;
+}
+
+.footer nav ul li a {
+    font-weight: 500;
+    font-size: 20px;
+    margin: 20px;
+    transition: 0.2s ;
+    color: #fff;
+}
+
+.footer nav ul li a:hover {
+    font-weight: 700;
+    color: #fff;
+}
+
+.footer .social i {
+    font-size: 2rem;
+        transition:0.2s
+    }
+
+    .footer .social a {
+        margin: 20px;
+        color: #fff;
+    }
+
+    .footer .social a:hover {
+        color: #fff;
+    }

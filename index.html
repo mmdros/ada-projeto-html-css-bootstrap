@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Repaginação IFood</title>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+        integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" href="./src/css/style.css">
+    <link rel="stylesheet" href="./src/css/responsivo.css">
+    <link rel="stylesheet" href="./src/css/font-awesome.css">
+</head>
+
+<body>
+    <header class="header">
+        <div class="header-container">
+            <a href="/">
+                <h1><img src="src/img/ifood-43.png" width="100px" alt="Logo Ifood"></h1>
+            </a>
+
+            <nav>
+                <input type="checkbox" id="menu-retratil">
+                <label for="menu-retratil">
+                    <div class="menu"><span class="retratil"></span></div>
+                </label>
+
+
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#cardapio">Cardápio</a></li>
+                    <li><a href="#restaurantes">Restaurantes</a></li>
+                    <li><a href="#contact">Fale Conosco</a></li>
+
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <section class="home">
+        <div class="container">
+            <div class="container-img"><img src="./src/img/ifood-logo-bran-gran-9800797.png" alt="logo Ifood">
+                <h2 class="container-h2">"Seu pedido chegou! Aprecie sem moderação!"</h2>
+            </div>
+            <div class="container-video">
+                <iframe class="video-ifood" width="560" height="315"
+                    src="https://www.youtube.com/embed/zUqdKwbC6_k?si=FWUr_bbkbOe35Wen" title="Comercial IFood"
+                    frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    allowfullscreen></iframe>
+            </div>
+        </div>
+    </section>
+    <section class="cardapio" id="cardapio">
+        <div class="cardapio-h2">
+            <h2>Cardápio</h2>
+        </div>
+        <div class="card" style="width: 18rem;">
+            <img class="card-img-top" src="./src/img/hamburguer-na-churrasqueira.jpg.webp"
+                alt="Foto hamburguer duas carnes">
+            <div class="card-body">
+                <h5 class="card-title">Duplo Sabor</h5>
+                <p class="card-text">Dois suculentos hambúrgueres de carne, queijo derretido, frescas folhas de alface,
+                    fatias de tomate e um toque especial de molho secreto, tudo envolto em um pão macio e tostado.</p>
+                <p class="card-price">Preço: 32,90</p>
+            </div>
+        </div>
+        <div class="card" style="width: 18rem;">
+            <img class="card-img-top" src="./src/img/iFN_pizza.jpg" alt="Foto de pizza tradicional">
+            <div class="card-body">
+                <h5 class="card-title">Portuguesa Tradicional</h5>
+                <p class="card-text">Uma pizza clássica e deliciosa com molho de tomate, queijo derretido, presunto
+                    fatiado, rodelas de linguiça calabresa, cebola, ovos cozidos e azeitonas verdes, tudo
+                    harmoniosamente combinado para criar um sabor autêntico e reconfortante.</p>
+                <p class="card-price">Preço: 62,90</p>
+            </div>
+        </div>
+        <div class="card" style="width: 18rem;">
+            <img class="card-img-top" src="./src/img/combinado-1024x1024.jpg" alt="Foto combinado de comida japonesa">
+            <div class="card-body">
+                <h5 class="card-title">Supreme Sushi Experience</h5>
+                <p class="card-text">Uma seleção irresistível de rolls, uramakis e sushis frescos e meticulosamente
+                    preparados. Inclui rolls especiais com salmão, abacate e pepino, uramakis de camarão com maionese
+                    picante, e sushis de atum e peixe branco, servidos com wasabi, gengibre em conserva e molho de soja.
+                </p>
+                <p class="card-price">Preço: 79,90</p>
+            </div>
+        </div>
+        <div class="card" style="width: 18rem;">
+            <img class="card-img-top" src="./src/img/poke-salmao-havaiana.jpg" alt="Foto poke tradicional">
+            <div class="card-body">
+                <h5 class="card-title">Poke Tropical Paradise</h5>
+                <p class="card-text">cubos de salmão fresco e atum marinados em molho de soja, gengibre e limão,
+                    servidos sobre uma cama de arroz de sushi. Complementado por abacate cremoso, pepino crocante, manga
+                    doce, cebola roxa e sementes de gergelim, este prato de poke havaiano oferece uma experiência
+                    gastronômica vibrante e saudável.</p>
+                <p class="card-price">Preço: 39,90</p>
+            </div>
+        </div>
+        <div class="card" style="width: 18rem;">
+            <img class="card-img-top" src="./src/img/cahorro-quente-1024x1024.jpg"
+                alt="Cachorro-quente com cebola e pimentão">
+            <div class="card-body">
+                <h5 class="card-title">Hot Dog Saboroso da Rua</h5>
+                <p class="card-text">uma saborosa linguiça grelhada, coberta com pimentão fresco e cebola tostada, tudo
+                    envolto em um pão macio e levemente tostado. Uma combinação perfeita de sabores defumados, picantes
+                    e doces que proporciona uma experiência de cachorro quente irresistível e satisfatória.</p>
+                <p class="card-price">Preço: 22,90</p>
+            </div>
+        </div>
+        <div class="card" style="width: 18rem;">
+            <img class="card-img-top" src="./src/img/Tacos.jpg" alt="Tacos com recheio vegetariano">
+            <div class="card-body">
+                <h5 class="card-title">Tacos Veggie Fiesta</h5>
+                <p class="card-text"> Saboreie a autêntica frescura mexicana com nossos tacos de legumes! Recheados com
+                    abacate cremoso, pimentões coloridos, milho doce e feijão preto, tudo cuidadosamente temperado com
+                    especiarias mexicanas. Servidos em tortilhas de milho quentinhas e acompanhados de guacamole, salsa
+                    fresca e chips crocantes. Um festim saudável e delicioso!</p>
+                <p class="card-price">Preço: 29,90</p>
+            </div>
+        </div>
+        <div class="card" style="width: 18rem;">
+            <img class="card-img-top" src="./src/img/fricassê-1024x1024.webp" alt="Fricassé Dourado de Frango">
+            <div class="card-body">
+                <h5 class="card-title">"Fricassé Dourado de Frango</h5>
+                <p class="card-text">Delicie-se com nosso Fricassé Dourado de Frango. Peitos de frango macios e dourados
+                    em molho cremoso de champignons, creme de leite e ervas, acompanhados de arroz branco fofinho e
+                    legumes frescos salteados. Uma explosão de sabores que aquece o coração.</p>
+                <p class="card-price">Preço: 42,90</p>
+            </div>
+        </div>
+        <div class="card" style="width: 18rem;">
+            <img class="card-img-top" src="./src/img/lula-1024x1024.jpg" alt="Imagem de capa do card">
+            <div class="card-body">
+                <h5 class="card-title">Maria Carolina no Mar</h5>
+                <p class="card-text">Uma iguaria do oceano! Tenros anéis de lula e pedaços suculentos de polvo grelhados
+                    com ervas mediterrâneas, servidos sobre cama de risoto de limão e espinafre. Um casamento perfeito
+                    de sabores marinhos que elevam sua experiência gastronômica a um novo patamar.</p>
+                <p class="card-price">Preço: 59,90</p>
+            </div>
+        </div>
+    </section>
+    <section class="restaurantes" id="restaurantes">
+        <h2>Os 10 Melhores Restaurantes</h2>
+        <ul class="list-unstyled">
+            <li class="media">
+                <img class="mr-3" src="./src/img/leve-massa.jpg" alt="Estabelecimento Leve Massa">
+                <div class="media-body">
+                    <h5 class="mt-0 mb-1">Pizzaria Leve Massa (Estilo Italiano - Pizzaria)</h5>
+                    O paraíso dos amantes de pizza que buscam uma experiência culinária excepcional. Na Leve Massa, cada
+                    pizza é uma obra-prima cuidadosamente preparada, começando com uma massa fina e crocante, feita à
+                    mão diariamente, que serve de base para uma variedade de coberturas frescas e ingredientes
+                    cuidadosamente selecionados.
+                </div>
+            </li>
+            <li class="media my-4">
+                <img class="mr-3" src="./src/img/restaurante-japones.jpg" alt="Imagem de exemplo genérica">
+                <div class="media-body">
+                    <h5 class="mt-0 mb-1">Sakura Sushi Bar (Estilo Japonês)</h5>
+                    Localizado no coração da cidade, o Sakura Sushi Bar é conhecido por sua autêntica culinária
+                    japonesa. Os chefs habilidosos preparam sushis frescos e sashimis que derretem na boca dos clientes.
+                    O ambiente tranquilo e a decoração tradicional criam uma experiência verdadeiramente japonesa.
+                </div>
+            </li>
+            <li class="media">
+                <img class="mr-3" src="./src/img/restaurante-italiano.jpg" alt="Estabelecimento Bella Vita">
+                <div class="media-body">
+                    <h5 class="mt-0 mb-1">Ristorante Italiano Bella Vita (Estilo Italiano)</h5>
+                    Bella Vita é um charmoso restaurante italiano que oferece pratos clássicos da Itália. Desde a pasta
+                    fresca até as deliciosas sobremesas, cada item é preparado com ingredientes de alta qualidade. O
+                    ambiente acolhedor e a vasta seleção de vinhos italianos completam a experiência gastronômica.
+                </div>
+            </li>
+            <li class="media my-4">
+                <img class="mr-3" src="./src/img/restaurante-havaiano.jpg" alt="Estabelecimento Aloha Poké House">
+                <div class="media-body">
+                    <h5 class="mt-0 mb-1">Aloha Poké House (Estilo Havaiano)</h5>
+                    Inspirado na culinária havaiana, o Aloha Poké House é conhecido por seus bowls de poké frescos e
+                    saudáveis. Os clientes podem personalizar seus próprios pratos com uma variedade de peixes, vegetais
+                    frescos e molhos exóticos. É o destino perfeito para quem procura uma refeição leve e saborosa.
+                </div>
+            </li>
+            <li class="media my-4">
+                <img class="mr-3" src="./src/img/restaurante-churrascaria.jpg"
+                    alt="Estabelecimento Churrascaria Gaúcha">
+                <div class="media-body">
+                    <h5 class="mt-0 mb-1">Churrascaria Gaúcha (Estilo Brasileiro - Churrascaria)</h5>
+                    A Churrascaria Gaúcha é famosa por sua autêntica churrascaria brasileira, onde os clientes podem
+                    desfrutar de uma variedade de carnes grelhadas no espeto, diretamente na mesa. A seleção de cortes é
+                    impressionante e é acompanhada por uma variedade de acompanhamentos brasileiros, como farofa, feijão
+                    tropeiro e mandioca frita.
+                </div>
+            </li>
+            <li class="media my-4">
+                <img class="mr-3" src="./src/img/restaurante-americano.jpg" alt="Estabelecimento Uncle Sam's Diner">
+                <div class="media-body">
+                    <h5 class="mt-0 mb-1">Uncle Sam's Diner (Estilo Americano)</h5>
+                    Este diner americano é um verdadeiro ícone local, servindo hambúrgueres suculentos, milkshakes
+                    cremosos e batatas fritas crocantes. O ambiente retrô, com bancos de vinil e jukebox, transporta os
+                    clientes de volta aos anos dourados da América, proporcionando uma experiência nostálgica e
+                    deliciosa.
+                </div>
+            </li>
+            <li class="media my-4">
+                <img class="mr-3" src="./src/img/restaurante-havaiano-tiki.jpg" alt="Estabelecimento Maui Tiki Bar">
+                <div class="media-body">
+                    <h5 class="mt-0 mb-1">Maui Tiki Bar (Estilo Havaiano - Bar Tiki)</h5>
+                    Além de servir pratos havaianos deliciosos, o Maui Tiki Bar é conhecido por sua atmosfera animada e
+                    coquetéis tropicais. O bar tiki oferece uma variedade de bebidas exóticas, servidas em copos
+                    divertidos e decoradas com guarda-chuvas coloridos, criando uma experiência divertida e relaxante
+                    para os clientes.
+                </div>
+            </li>
+            <li class="media my-4">
+                <img class="mr-3" src="./src/img/restaurante-nordestino.jpg" alt="Estabelecimento Sabor do Nordeste">
+                <div class="media-body">
+                    <h5 class="mt-0 mb-1">Sabor do Nordeste (Estilo Brasileiro - Nordestino)</h5>
+                    Sabor do Nordeste é especializado na autêntica culinária nordestina do Brasil. Os pratos
+                    tradicionais, como acarajé, moqueca e tapioca, são preparados com especiarias típicas da região,
+                    proporcionando aos clientes uma verdadeira explosão de sabores brasileiros.
+                </div>
+            </li>
+            <li class="media my-4">
+                <img class="mr-3" src="./src/img/restaurante-japones-ramen.jpg" alt="Estabelecimento Tokyo Ramen House">
+                <div class="media-body">
+                    <h5 class="mt-0 mb-1">Tokyo Ramen House (Estilo Japonês - Ramen)</h5>
+                    Um paraíso para os amantes de ramen, o Tokyo Ramen House serve tigelas fumegantes de macarrão, caldo
+                    rico e ingredientes frescos. Os diferentes tipos de ramen, desde o clássico shoyu até o picante
+                    miso, garantem uma experiência autêntica e reconfortante da culinária japonesa.
+                </div>
+            </li>
+            <li class="media">
+                <img class="mr-3" src="./src/img/restaurante-italiano-napolitana.jpg" alt="Pizzaria Napoli">
+                <div class="media-body">
+                    <h5 class="mt-0 mb-1">Pizzaria Napoli (Estilo Italiano - Pizza Napoletana)</h5>
+                    A Pizzaria Napoli é conhecida por suas pizzas napoletanas autênticas, preparadas em forno a lenha.
+                    Com ingredientes frescos e uma massa fina e crocante, as pizzas são verdadeiras obras de arte
+                    gastronômica. O cardápio inclui opções tradicionais e criativas para atender a todos os gostos.
+                </div>
+            </li>
+        </ul>
+    </section>
+
+    <section class="form" id="contact">
+
+        <h2>Fale conosco</h2>
+
+        <form onsubmit="onSubmit()">
+            <div class="form-group">
+                <label for="escolha">Diga o assunto:</label>
+                <select id="escolha" name="opcao" class="custom-select" required>
+                    <option value="" selected>Escolha uma opção</option>
+                    <option value="1">Sugestão</option>
+                    <option value="2">Reclamação</option>
+                    <option value="3">Sugerir pratos</option>
+                    <option value="4">Trabalhe conosco</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="exampleFormControlInput1">Nome Completo:</label>
+                <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="digite seu nome aqui"
+                    required>
+            </div>
+            </div>
+            <div class="form-group">
+                <label for="exampleFormControlInput1">Endereço de email</label>
+                <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="nome@exemplo.com"
+                    required>
+            </div>
+            <div class="form-group">
+                <label for="exampleFormControlTextarea1">Deixe sua opinião abaixo:</label>
+                <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" required></textarea>
+            </div>
+
+            <div class="form-group">
+                <input class="enviar-submit" type="submit" value="Enviar">
+            </div>
+        </form>
+
+        <script>
+            function onSubmit() {
+                alert('Feedback enviado com sucesso!')
+            }
+        </script>
+
+    </section>
+
+    <footer class="footer" id="contact">
+        <a href="/">
+            <h4><img src="src/img/ifood-logo-bran-gran-9800797.png" width="100px" alt="Logo Ifood"></h4>
+        </a>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#cardapio">Cardápio</a></li>
+                <li><a href="#restaurantes">Restaurantes</a></li>
+                <li><a href="#contact">Fale conosco</a></li>
+            </ul>
+        </nav>
+
+        <div class="social">
+            <a href="">
+                <i class="fa-brands fa-square-facebook"></i>
+            </a>
+            <a href="">
+                <i class="fa-brands fa-instagram"></i>
+            </a>
+            <a href="">
+                <i class="fa-brands fa-x-twitter"></i>
+            </a>
+        </div>
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+        integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+        integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+        crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/1fd2b5c49a.js" crossorigin="anonymous"></script>
+
+</body>
+
+</html>
